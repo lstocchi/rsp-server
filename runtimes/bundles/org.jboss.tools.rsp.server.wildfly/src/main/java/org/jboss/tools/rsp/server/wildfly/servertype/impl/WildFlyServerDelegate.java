@@ -31,7 +31,7 @@ public class WildFlyServerDelegate extends AbstractJBossServerDelegate {
 	@Override
 	protected String getPollURL(IServer server) {
 		// TODO?
-		return "http://localhost:8080";
+		return "http://localhost:8082";
 	}
 	@Override
 	protected IJBossPublishController createPublishController() {

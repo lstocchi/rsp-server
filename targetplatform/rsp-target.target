@@ -33,7 +33,7 @@
     </location>
 
     <!-- SimRel -->
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" type="InstallableUnit" includeSource="true">
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
   <repository location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20190301-0700-Simrel.2019-03.M3/"/>
 
       <!-- p2.discovery -->
