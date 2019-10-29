@@ -93,5 +93,27 @@ availableRuntimes:
         },
         wtp-runtime-type: org.jboss.tools.openshift.cdk.server.runtime.type.crc.100
    }
+   ########################
+   #   Tomcat 1.0   #
+   ########################
+
+ - &tomcat9000
+   id: tomcat9000
+   name: Tomcat v9.0.0
+   version: 1.0.0
+   license: *apache20
+   url: https://github.com/minishift/minishift/releases
+   labels: {
+        requiresCredentials: false,
+        runtime-category: TOMCAT,
+        runtime-type: TOMCAT,
+        runtime-size: 10500000,
+        additionalDownloadURLs: {
+            "win32": "https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-windows-amd64.zip",
+            "linux": "https://www-us.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz",
+            "macosx": "https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-macos-amd64.tar.xz",
+        },
+        wtp-runtime-type: org.jboss.ide.eclipse.as.runtime.tomcat.90
+   }
 
   
